@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+/* Enable dark mode using the .dark class */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+
+  --surface: #ffffff;
+  --surface-secondary: #f1f5f9;
+
+  --muted: #64748b;
+
+  --border: #e2e8f0;
+
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+}
+
+.dark {
+  --background: #090e1a;
+  --foreground: #f8fafc;
+
+  --surface: #0f172a;
+  --surface-secondary: #111c30;
+
+  --muted: #94a3b8;
+
+  --border: #1e293b;
+
+  --primary: #3b82f6;
+  --primary-hover: #60a5fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+section[id] {
+  scroll-margin-top: 6rem;
+}
+
+@keyframes hero-float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.hero-float {
+  animation: hero-float 5s ease-in-out infinite;
+}
+
+@keyframes hero-enter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-card-enter {
+  from {
+    opacity: 0;
+    transform: translateX(24px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.hero-enter {
+  opacity: 0;
+  animation: hero-enter 0.7s ease-out forwards;
+}
+
+.hero-card-enter {
+  opacity: 0;
+  animation: hero-card-enter 0.8s ease-out 0.2s forwards;
+}
+
+.hero-delay-1 {
+  animation-delay: 0.08s;
+}
+
+.hero-delay-2 {
+  animation-delay: 0.16s;
+}
+
+.hero-delay-3 {
+  animation-delay: 0.24s;
+}
+
+.hero-delay-4 {
+  animation-delay: 0.32s;
+}
+
+.hero-delay-5 {
+  animation-delay: 0.4s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .hero-enter,
+  .hero-card-enter {
+    opacity: 1;
+    animation: none;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-float {
+    animation: none;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: var(--primary);
+  color: white;
+}
