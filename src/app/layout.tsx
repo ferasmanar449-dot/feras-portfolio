@@ -16,8 +16,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    "https://feras-portfolio-7jknqfrew-mobile12.vercel.app"
+  ),
   title: "Feras Alhreibat | Mobile & Full-Stack Developer",
-
+  alternates: {
+    canonical: "/",
+  },
   description:
     "Portfolio of Feras Alhreibat, a Mobile & Full-Stack Developer specializing in Flutter, Dart, .NET, C#, SQL, Clean Architecture, BLoC, REST APIs, and enterprise software development.",
 
@@ -59,6 +64,7 @@ export const metadata: Metadata = {
     title: "Feras Alhreibat | Mobile & Full-Stack Developer",
     description:
       "Mobile & Full-Stack Developer building reliable, scalable, and maintainable software with Flutter, Dart, .NET, C#, SQL, and Clean Architecture.",
+    url: "/",
     type: "website",
     locale: "en_US",
     siteName: "Feras Alhreibat Portfolio",
