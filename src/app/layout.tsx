@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    "https://feras-portfolio-7jknqfrew-mobile12.vercel.app"
+    "https://feras-portfolio-zeta.vercel.app"
   ),
   title: "Feras Alhreibat | Mobile & Full-Stack Developer",
   alternates: {

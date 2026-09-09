@@ -112,7 +112,7 @@ The portfolio is deployed on **Vercel**.
 
 Live site:
 
-https://feras-portfolio-7jknqfrew-mobile12.vercel.app
+https://feras-portfolio-zeta.vercel.app
 ## Project Structure
 
 ```text
