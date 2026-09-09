@@ -106,7 +106,13 @@ Contributions include:
 - Vercel
 
 ---
+## Deployment
 
+The portfolio is deployed on **Vercel**.
+
+Live site:
+
+https://feras-portfolio-7jknqfrew-mobile12.vercel.app
 ## Project Structure
 
 ```text
