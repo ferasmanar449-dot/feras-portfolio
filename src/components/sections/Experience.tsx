@@ -61,10 +61,6 @@ export function Experience() {
 
                                     {/* Card */}
                                     <article className="group relative overflow-hidden rounded-[2rem] border border-[var(--border)] bg-[var(--surface)] p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-[var(--primary)] hover:shadow-2xl hover:shadow-[var(--primary)]/5 sm:p-8">
-                                        {experience.current && (
-                                            <div className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-blue-500/10 blur-3xl" />
-                                        )}
-
                                         <div className="relative">
                                             {/* Job Header */}
                                             <div>

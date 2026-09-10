@@ -46,9 +46,6 @@ export function Projects() {
                                 className="h-full"
                             >
                                 <article className="group relative flex h-full flex-col justify-between overflow-hidden rounded-[2rem] border border-[var(--border)] bg-[var(--surface)] p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-[var(--primary)] hover:shadow-2xl hover:shadow-[var(--primary)]/5 sm:p-8">
-                                    {/* Ambient Glow */}
-                                    <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-blue-500/10 blur-3xl transition-opacity duration-300 group-hover:opacity-100" />
-
                                     <div className="relative">
                                         <div className="flex items-start justify-between gap-4">
                                             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--surface-secondary)] text-[var(--primary)] transition-transform duration-300 group-hover:scale-105">
