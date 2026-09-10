@@ -26,28 +26,28 @@ export function Contact() {
     return (
         <section
             id="contact"
-            className="border-t border-[var(--border)] py-20 sm:py-28"
+            className="w-full overflow-hidden border-t border-[var(--border)] py-16 sm:py-24 lg:py-28"
         >
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <Reveal>
-                    <div className="relative overflow-hidden rounded-[2rem] border border-[var(--border)] bg-[var(--surface)] p-6 sm:rounded-[2.5rem] sm:p-10 lg:p-16">
-                        <div className="relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-12">
-                            {/* Left */}
-                            <div>
-                                <Reveal delay={80}>
-                                    <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--primary)] sm:mb-4 sm:text-sm">
+            <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+                <Reveal className="w-full min-w-0 max-w-full">
+                    <div className="relative w-full min-w-0 max-w-full overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:rounded-[2.5rem] sm:p-8 lg:p-14">
+                        <div className="grid w-full min-w-0 max-w-full gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-12">
+                            {/* Left Column */}
+                            <div className="w-full min-w-0 max-w-full">
+                                <Reveal delay={80} className="w-full min-w-0">
+                                    <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--primary)] sm:mb-4 sm:text-sm">
                                         Contact
                                     </p>
                                 </Reveal>
 
-                                <Reveal delay={140}>
-                                    <h2 className="max-w-3xl text-3xl font-bold tracking-[-0.03em] text-[var(--foreground)] sm:text-4xl lg:text-5xl">
+                                <Reveal delay={140} className="w-full min-w-0">
+                                    <h2 className="text-2xl font-bold tracking-[-0.03em] text-[var(--foreground)] sm:text-4xl lg:text-5xl">
                                         Let&apos;s build something meaningful together.
                                     </h2>
                                 </Reveal>
 
-                                <Reveal delay={200}>
-                                    <div className="mt-5 max-w-2xl space-y-4 text-sm leading-7 text-[var(--muted)] sm:mt-6 sm:text-base sm:leading-8">
+                                <Reveal delay={200} className="w-full min-w-0">
+                                    <div className="mt-4 space-y-3 text-xs leading-relaxed text-[var(--muted)] sm:mt-6 sm:space-y-4 sm:text-base sm:leading-8">
                                         <p>
                                             I&apos;m open to opportunities in mobile development,
                                             frontend engineering, full-stack development, and software
@@ -64,42 +64,39 @@ export function Contact() {
                                     </div>
                                 </Reveal>
 
-                                <Reveal delay={260}>
-                                    <div className="mt-7 flex flex-wrap items-center gap-3 sm:mt-8 sm:gap-4">
+                                <Reveal delay={260} className="w-full min-w-0">
+                                    <div className="mt-6 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center sm:gap-4">
                                         <a
                                             href="mailto:ferasmanar449@gmail.com"
-                                            className="group inline-flex h-11 items-center gap-2 rounded-full bg-[var(--primary)] px-5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[var(--primary-hover)] hover:shadow-lg active:translate-y-0 sm:h-12 sm:px-6"
+                                            className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-full bg-[var(--primary)] px-6 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[var(--primary-hover)] hover:shadow-lg active:translate-y-0 sm:h-12 sm:w-auto"
                                         >
                                             <Mail size={17} />
-                                            Send Email
+                                            <span>Send Email</span>
                                         </a>
 
                                         <a
                                             href="https://www.linkedin.com/in/feras-alhribat-3b6873353"
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="group inline-flex h-11 items-center gap-2 rounded-full border border-[var(--border)] bg-[var(--surface-secondary)] px-5 text-sm font-semibold text-[var(--foreground)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--primary)] hover:text-[var(--primary)] active:translate-y-0 sm:h-12 sm:px-6"
+                                            className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-full border border-[var(--border)] bg-[var(--surface-secondary)] px-6 text-sm font-semibold text-[var(--foreground)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--primary)] hover:text-[var(--primary)] active:translate-y-0 sm:h-12 sm:w-auto"
                                         >
                                             <FaLinkedinIn size={16} />
-                                            Connect on LinkedIn
-                                            <ArrowUpRight
-                                                size={15}
-                                                className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-                                            />
+                                            <span>Connect on LinkedIn</span>
+                                            <ArrowUpRight size={15} />
                                         </a>
                                     </div>
                                 </Reveal>
                             </div>
 
-                            {/* Right - Contact Cards */}
-                            <div className="space-y-3.5 sm:space-y-4">
+                            {/* Right Column - Contact Cards */}
+                            <div className="w-full min-w-0 max-w-full space-y-3 sm:space-y-4">
                                 {/* Email Card */}
-                                <Reveal delay={160}>
-                                    <div className="group rounded-2xl border border-[var(--border)] bg-[var(--surface-secondary)] p-4 transition-all duration-300 hover:border-[var(--primary)] hover:shadow-md sm:p-5">
-                                        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                                <Reveal delay={160} className="w-full min-w-0">
+                                    <div className="group w-full min-w-0 max-w-full overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface-secondary)] p-3.5 transition-all duration-300 hover:border-[var(--primary)] hover:shadow-md sm:p-5">
+                                        <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                                             <a
                                                 href="mailto:ferasmanar449@gmail.com"
-                                                className="flex items-center gap-3 min-w-0 sm:gap-4 flex-1"
+                                                className="flex min-w-0 flex-1 items-center gap-3 sm:gap-4"
                                             >
                                                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[var(--surface)] text-[var(--primary)] transition-transform duration-300 group-hover:scale-105 sm:h-11 sm:w-11">
                                                     <Mail size={19} />
@@ -110,13 +107,13 @@ export function Contact() {
                                                         Email
                                                     </p>
 
-                                                    <p className="mt-0.5 text-sm font-semibold text-[var(--foreground)] break-all sm:break-normal sm:text-base">
+                                                    <p className="mt-0.5 break-all text-xs font-semibold text-[var(--foreground)] sm:break-normal sm:text-sm md:text-base">
                                                         ferasmanar449@gmail.com
                                                     </p>
                                                 </div>
                                             </a>
 
-                                            <div className="flex items-center justify-end gap-2 border-t border-[var(--border)]/50 pt-2.5 sm:border-t-0 sm:pt-0 shrink-0">
+                                            <div className="flex shrink-0 items-center justify-end gap-2 border-t border-[var(--border)]/50 pt-2.5 sm:border-t-0 sm:pt-0">
                                                 <button
                                                     type="button"
                                                     onClick={handleCopyEmail}
@@ -150,14 +147,14 @@ export function Contact() {
                                 </Reveal>
 
                                 {/* LinkedIn Card */}
-                                <Reveal delay={220}>
+                                <Reveal delay={220} className="w-full min-w-0">
                                     <a
                                         href="https://www.linkedin.com/in/feras-alhribat-3b6873353"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="group flex items-center justify-between rounded-2xl border border-[var(--border)] bg-[var(--surface-secondary)] p-4 transition-all duration-300 hover:border-[var(--primary)] hover:shadow-md sm:p-5"
+                                        className="group flex w-full min-w-0 max-w-full items-center justify-between overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface-secondary)] p-3.5 transition-all duration-300 hover:border-[var(--primary)] hover:shadow-md sm:p-5"
                                     >
-                                        <div className="flex items-center gap-3 min-w-0 flex-1 sm:gap-4">
+                                        <div className="flex min-w-0 flex-1 items-center gap-3 sm:gap-4">
                                             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[var(--surface)] text-[var(--primary)] transition-transform duration-300 group-hover:scale-105 sm:h-11 sm:w-11">
                                                 <FaLinkedinIn size={19} />
                                             </div>
@@ -167,7 +164,7 @@ export function Contact() {
                                                     LinkedIn
                                                 </p>
 
-                                                <p className="mt-0.5 text-sm font-semibold text-[var(--foreground)] truncate sm:text-base">
+                                                <p className="mt-0.5 truncate text-xs font-semibold text-[var(--foreground)] sm:text-sm md:text-base">
                                                     linkedin.com/in/feras-alhribat-3b6873353
                                                 </p>
                                             </div>
@@ -180,8 +177,8 @@ export function Contact() {
                                 </Reveal>
 
                                 {/* Location Card */}
-                                <Reveal delay={280}>
-                                    <div className="flex items-center gap-3 rounded-2xl border border-[var(--border)] bg-[var(--surface-secondary)] p-4 sm:gap-4 sm:p-5">
+                                <Reveal delay={280} className="w-full min-w-0">
+                                    <div className="flex w-full min-w-0 max-w-full items-center gap-3 overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface-secondary)] p-3.5 sm:gap-4 sm:p-5">
                                         <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[var(--surface)] text-[var(--primary)] sm:h-11 sm:w-11">
                                             <MapPin size={19} />
                                         </div>
@@ -191,7 +188,7 @@ export function Contact() {
                                                 Location
                                             </p>
 
-                                            <p className="mt-0.5 text-sm font-semibold text-[var(--foreground)] sm:text-base">
+                                            <p className="mt-0.5 text-xs font-semibold text-[var(--foreground)] sm:text-sm md:text-base">
                                                 Amman, Jordan
                                             </p>
                                         </div>
@@ -199,8 +196,8 @@ export function Contact() {
                                 </Reveal>
 
                                 {/* Availability Card */}
-                                <Reveal delay={340}>
-                                    <div className="flex items-start gap-3 rounded-2xl border border-[var(--border)] bg-[var(--surface-secondary)] p-4 sm:items-center sm:gap-4 sm:p-5">
+                                <Reveal delay={340} className="w-full min-w-0">
+                                    <div className="flex w-full min-w-0 max-w-full items-start gap-3 overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface-secondary)] p-3.5 sm:items-center sm:gap-4 sm:p-5">
                                         <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[var(--surface)] text-[var(--primary)] sm:mt-0 sm:h-11 sm:w-11">
                                             <Globe size={19} />
                                         </div>
