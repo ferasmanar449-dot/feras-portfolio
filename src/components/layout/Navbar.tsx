@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Download, Menu, X } from "lucide-react";
 
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
@@ -10,6 +10,7 @@ const navLinks = [
     { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
+    { name: "Education", href: "#education" },
     { name: "Contact", href: "#contact" },
 ];
 
@@ -88,7 +89,7 @@ export function Navbar() {
                 </a>
 
                 {/* Desktop Navigation */}
-                <div className="hidden items-center gap-8 md:flex">
+                <div className="hidden items-center gap-6 md:flex lg:gap-8">
                     {navLinks.map((link) => {
                         const isActive = activeSection === link.href;
 
@@ -124,7 +125,18 @@ export function Navbar() {
                         );
                     })}
 
-                    <ThemeToggle />
+                    <div className="flex items-center gap-3 border-l border-[var(--border)] pl-4">
+                        <a
+                            href="/resume/Feras-Alhribat-CV.pdf"
+                            download
+                            className="inline-flex h-9 items-center gap-1.5 rounded-full border border-[var(--border)] bg-[var(--surface)] px-3.5 text-xs font-semibold text-[var(--foreground)] transition-all duration-300 hover:border-[var(--primary)] hover:text-[var(--primary)]"
+                        >
+                            <Download size={13} />
+                            Resume
+                        </a>
+
+                        <ThemeToggle />
+                    </div>
                 </div>
 
                 {/* Mobile Actions */}
@@ -182,6 +194,16 @@ export function Navbar() {
                                 </a>
                             );
                         })}
+
+                        <a
+                            href="/resume/Feras-Alhribat-CV.pdf"
+                            download
+                            onClick={() => setIsOpen(false)}
+                            className="mt-3 flex items-center justify-center gap-2 rounded-xl bg-[var(--primary)] py-3 text-sm font-semibold text-white transition-colors hover:bg-[var(--primary-hover)]"
+                        >
+                            <Download size={16} />
+                            Download Resume (CV)
+                        </a>
                     </div>
                 </div>
             )}
