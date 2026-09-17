@@ -5,32 +5,36 @@
 
 :root {
   --background: #f8fafc;
-  --foreground: #0f172a;
+  --foreground: #091717;
 
   --surface: #ffffff;
-  --surface-secondary: #f1f5f9;
+  --surface-secondary: #f0fdf4;
 
-  --muted: #64748b;
+  --muted: #4f665e;
 
-  --border: #e2e8f0;
+  --border: #e2ebe6;
 
-  --primary: #2563eb;
-  --primary-hover: #1d4ed8;
+  --primary: #059669;
+  --primary-hover: #047857;
+  --primary-glow: rgba(5, 150, 105, 0.18);
+  --primary-subtle: rgba(5, 150, 105, 0.08);
 }
 
 .dark {
-  --background: #090e1a;
-  --foreground: #f8fafc;
+  --background: #070c14;
+  --foreground: #f2f7f5;
 
-  --surface: #0f172a;
-  --surface-secondary: #111c30;
+  --surface: #0d1522;
+  --surface-secondary: #121c2e;
 
-  --muted: #94a3b8;
+  --muted: #8fa2a6;
 
-  --border: #1e293b;
+  --border: #1a273b;
 
-  --primary: #3b82f6;
-  --primary-hover: #60a5fa;
+  --primary: #10b981;
+  --primary-hover: #34d399;
+  --primary-glow: rgba(16, 185, 129, 0.22);
+  --primary-subtle: rgba(16, 185, 129, 0.1);
 }
 
 * {
@@ -74,7 +78,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--muted);
+  background: var(--primary);
 }
 
 a {

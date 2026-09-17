@@ -22,8 +22,8 @@ export function Hero() {
         <section className="relative overflow-hidden">
             {/* Background decoration */}
             <div className="pointer-events-none absolute inset-0">
-                <div className="absolute -right-40 top-20 h-96 w-96 rounded-full bg-blue-500/10 blur-3xl" />
-                <div className="absolute -left-40 bottom-20 h-80 w-80 rounded-full bg-cyan-500/10 blur-3xl" />
+                <div className="absolute -right-40 top-20 h-96 w-96 rounded-full bg-emerald-500/15 blur-3xl dark:bg-emerald-500/10" />
+                <div className="absolute -left-40 bottom-20 h-80 w-80 rounded-full bg-teal-500/15 blur-3xl dark:bg-teal-500/10" />
             </div>
 
             <div className="relative mx-auto grid min-h-[calc(100svh-5rem)] max-w-7xl items-center gap-10 px-6 py-8 lg:grid-cols-[1.08fr_0.92fr] lg:px-8 lg:py-10">
@@ -185,7 +185,7 @@ export function Hero() {
 
                                     <p className="pl-5">
                                         mobile:{" "}
-                                        <span className="text-sky-600 dark:text-sky-400">
+                                        <span className="text-emerald-600 dark:text-emerald-400">
                                             [&quot;Flutter&quot;, &quot;Dart&quot;]
                                         </span>
                                         ,
@@ -201,7 +201,7 @@ export function Hero() {
 
                                     <p className="pl-5">
                                         backend:{" "}
-                                        <span className="text-sky-600 dark:text-sky-400">
+                                        <span className="text-teal-600 dark:text-teal-400">
                                             [&quot;.NET&quot;, &quot;C#&quot;, &quot;SQL&quot;]
                                         </span>
                                         ,
@@ -209,7 +209,7 @@ export function Hero() {
 
                                     <p className="pl-5">
                                         architecture:{" "}
-                                        <span className="text-indigo-600 dark:text-indigo-400">
+                                        <span className="text-emerald-600 dark:text-emerald-300">
                                             &quot;Clean Architecture&quot;
                                         </span>
                                     </p>
@@ -238,7 +238,7 @@ export function Hero() {
 
                         {/* Mobile badge */}
                         <div className="absolute -left-8 -top-6 z-10 flex items-center gap-3 rounded-2xl border border-[var(--border)] bg-[var(--surface)]/95 px-4 py-3 shadow-xl backdrop-blur-md transition-all duration-300 hover:scale-105">
-                            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-sky-500/10 text-sky-500">
+                            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
                                 <Smartphone size={18} />
                             </div>
                             <div>
@@ -251,7 +251,7 @@ export function Hero() {
 
                         {/* Backend badge */}
                         <div className="absolute -right-6 bottom-6 flex items-center gap-3 rounded-2xl border border-[var(--border)] bg-[var(--surface)]/95 px-4 py-3 shadow-xl backdrop-blur-md transition-all duration-300 hover:scale-105">
-                            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-500">
+                            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400">
                                 <Server size={18} />
                             </div>
                             <div>

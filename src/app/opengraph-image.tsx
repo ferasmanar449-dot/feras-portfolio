@@ -19,7 +19,7 @@ export default function OpenGraphImage() {
                     justifyContent: "center",
                     padding: "80px",
                     background:
-                        "linear-gradient(135deg, #090e1a 0%, #0f172a 55%, #172554 100%)",
+                        "linear-gradient(135deg, #070c14 0%, #0d1522 55%, #064e3b 100%)",
                     color: "#ffffff",
                     fontFamily: "Arial, sans-serif",
                 }}
@@ -40,7 +40,7 @@ export default function OpenGraphImage() {
                             alignItems: "center",
                             justifyContent: "center",
                             borderRadius: "20px",
-                            background: "#2563eb",
+                            background: "#10b981",
                             fontSize: "28px",
                             fontWeight: 700,
                         }}
@@ -98,9 +98,9 @@ export default function OpenGraphImage() {
                                 display: "flex",
                                 padding: "12px 20px",
                                 borderRadius: "999px",
-                                border: "1px solid #334155",
-                                background: "#0f172a",
-                                color: "#e2e8f0",
+                                border: "1px solid #1a273b",
+                                background: "#0d1522",
+                                color: "#f2f7f5",
                                 fontSize: "20px",
                             }}
                         >
